@@ -1,4 +1,0 @@
-SUBtest
-<?php
-$hip = JUhuu;
-?>
