@@ -4,3 +4,5 @@ $files = glob("/*.{txt}", GLOB_BRACE);
 
 print_r($files);
 ?>
+
+TEST
