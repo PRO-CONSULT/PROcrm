@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="style.css">
 <?php $titel='PROcrm V. Alpha 0.1';?>
 <meta charset="UTF-8">
 <meta name="description" content="Free Web tutorials">
@@ -11,7 +12,7 @@
 
 
 <body>
-
+<?php include 'grafiktest.php'; ?>
 
 
 
