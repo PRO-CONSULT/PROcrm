@@ -1,0 +1,146 @@
+/* TOP grafik */
+
+div.top {position: absolute; top: 2%; left: 2%; display: grid; width: 95%; min-height: 60px; align-self: center; background-color: ; border-style: solid; border-width: 0px; 
+grid-template-areas:
+    'top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-klokke top-klokketal top-mail top-mailtal top-aux top-auxtal adminmenu'
+}
+div.top-logo {grid-area: top-logo; align-self: left; background-color: ; border-style: solid; border-width: 0px; }
+div.top-klokke {grid-area: top-klokke; align-self: left; border-style: solid; border-width: 0px; font-size: 40px;}
+div.top-klokketal {grid-area: top-klokketal; align-self: left; border-style: solid; border-width: 0px; font-size: 40px;}
+div.top-mail {grid-area: top-mail; align-self: left; border-style: solid; border-width: 0px; font-size: 40px; }
+div.top-mailtal {grid-area: top-mailtal; align-self: left; border-style: solid; border-width: 0px; font-size: 40px;}
+div.top-aux {grid-area: top-aux; align-self: left; border-style: solid; border-width: 0px; font-size: 40px;}
+div.top-auxtal {grid-area: top-auxtal; align-self: left; border-style: solid; border-width: 0px; font-size: 40px;}
+div.adminmenu {grid-area: adminmenu; align-self: left; border-style: solid; border-width: 0px; font-size: 40px;}
+
+/* menu Grafic */
+div.menu {position: absolute; top: 6%; left: 2%; display: grid; width: 95%; min-height: 60px; align-self: center; background-color:  ; border-style: solid; border-width: 0px;
+grid-template-areas:
+    'menuunder1 menuunder1 menuunder2 menuunder2 menuunder3 menuunder3 menuunder4 menuunder4 menuunder5 menuunder5 menuunder6 menuunder6 menuunder7 menuunder7 menuunder8 menuunder8 menuunder8 menuunder8 menuunder8 menuunder8 menuunder8 menuunder8 menuunder8 menuunder9 menuunder9 menuunder9 menuunder9 menuunder9 menuunder9 menuunder9 menuunder9 menuunder9';
+grid-gap: 20px;
+}
+div.menuunder1 {grid-area: menuunder1; align-self: left; background-color: #fff; border-style: solid; border-width: 2px;}
+div.menuunder2 {grid-area: menuunder2; align-self: left; background-color: #fff; border-style: solid; border-width: 2px;}
+div.menuunder3 {grid-area: menuunder3; align-self: left; background-color: #fff; border-style: solid; border-width: 2px;}
+div.menuunder4 {grid-area: menuunder4; align-self: left; background-color: #fff; border-style: solid; border-width: 2px;}
+div.menuunder5 {grid-area: menuunder5; align-self: left; background-color: #fff; border-style: solid; border-width: 2px;}
+div.menuunder6 {grid-area: menuunder6; align-self: left; background-color: #fff; border-style: solid; border-width: 2px;}
+div.menuunder7 {grid-area: menuunder7; align-self: left; background-color: #fff; border-style: solid; border-width: 2px;}
+div.menuunder8 {grid-area: menuunder8; align-self: left; background-color: #fff; border-style: solid; border-width: 0px;}
+div.menuunder9 {grid-area: menuunder9; align-self: left; background-color: #fff; border-style: solid; border-width: 2px;}
+
+/* main Grafic */
+div.main {position: absolute; top: 11%; left: 2%; display: grid; width: 95%; height: auto; min-height: 1000px; margin-top: 25px; align-self: center; background-color: ; border-style: solid; border-width: 0px;
+grid-template-areas:
+    'tr1 tr1 tr2 tr2 tr3 tr3 tr4 tr4 tr5' ;
+grid-gap: 20px;
+}
+div.tr1 {grid-area: tr1; align-self: left; background-color: #fff; border-style: solid; border-width: 0px; height: auto; min-height: 1000px;}
+div.tr2 {grid-area: tr2; align-self: left; background-color: #fff; border-style: solid; border-width: 0px;}
+div.tr3 {grid-area: tr3; align-self: left; background-color: #fff; border-style: solid; border-width: 0px;}
+div.tr4 {grid-area: tr4; align-self: left; background-color: #fff; border-style: solid; border-width: 0px;}
+div.tr5 {grid-area: tr5; align-self: left; background-color: #fff; border-style: solid; border-width: 0px;}
+
+/* tr Grafic */
+div.trtop {border-style: solid; border-width: 2px; height: 4%;}
+div.trtopdiv1 {align-self: left; min-width: 90%; display: inline-block; height: 100%; vertical-align: baseline; text-align: center;}
+div.trtopdiv2 {align-self: left; width: 9%; display: inline-block; height: 100%;   text-align: center;}
+div.trdrop {border-style: solid; border-width: 2px; height: 2%;}
+div.trinder1 {border-style: solid; border-width: 2px; height: 98%; min-height: 400px; max-height: 600px;  overflow-y: scroll;}
+select.trdrop {height: 100%; width: 100%;}
+
+
+/* Oversite */
+div.oversidetop {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  top: 00px;
+  right: 0px;
+  margin: -3px;
+  padding: 0px;
+}
+
+div.overside1{
+  width: 13.9%;
+  display: inline-block;
+  border-style: solid; border-width: 0px 2px 2px 0px;
+  font-size: 25px;
+  margin: -3px;
+  padding: 2px;
+}
+div.overside2{
+  width: 13.8%;
+  display: inline-block;
+  border-style: solid; border-width: 0px 2px 2px 0px;
+  font-size: 25px;
+  margin: -3px;
+  padding: 2px;
+}
+div.overside3{
+  width: 13.8%;
+  display: inline-block;
+  border-style: solid; border-width: 0px 2px 2px 0px;
+  font-size: 25px;
+  margin: -3px;
+  padding: 2px;
+}
+div.overside4{
+  width: 13.8%;
+  display: inline-block;
+  border-style: solid; border-width: 0px 2px 2px 0px;
+  font-size: 25px;
+  margin: -3px;
+  padding: 2px;
+}
+div.overside5{
+  width: 13.8%;
+  display: inline-block;
+  border-style: solid; border-width: 0px 2px 2px 0px;
+  font-size: 25px;
+  margin: -3px;
+  padding: 2px;
+}
+div.overside6{
+  width: 13.8%;
+  display: inline-block;
+  border-style: solid; border-width: 0px 2px 2px 0px;
+  font-size: 25px;
+  margin: -3px;
+  padding: 2px;
+}
+div.overside7{
+  width: 13.8%;
+  font-size: 25px;
+  display: inline-block;
+  border-style: solid; border-width: 0px 2px 2px 0px;
+  margin: -3px;
+  padding: 2px;
+}
+div.overside8{
+  width: 2.0%;
+  display: inline-block;
+  vertical-align: baseline; text-align: center;
+  border-style: solid; border-width: 0px 0px 2px 0px;
+  font-size: 20px;
+  margin: -3px;
+  padding: 2px;
+  height: 25px;
+}
+
+.overlay {
+  height: 0%;
+  width: 90%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1;
+  top: 11%;
+  left: 5%;
+  overflow-x: hidden;
+  transition: 0.5s;
+  border-style: solid; border-width: 0px;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: red;
+}
