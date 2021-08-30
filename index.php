@@ -46,7 +46,7 @@ function closeovermenu1() {
 </script>
 <script>
 function openovermenu2() {
-  document.getElementById("overmenu2").style.minHeight = "1320px";
+  document.getElementById("overmenu2").style.minHeight = "320px";
   document.getElementById("overmenu2").style.borderWidth = "2px"; 
   document.getElementById("BottomOverMenu2").setAttribute('onclick','closeovermenu2()');
   document.getElementById("BottomOverMenu2").innerHTML = "<i class='fas fa-arrow-circle-up'></i>";
@@ -62,7 +62,7 @@ function closeovermenu2() {
 </script>
 <script>
 function openovermenu3() {
-  document.getElementById("overmenu3").style.minHeight = "1320px";
+  document.getElementById("overmenu3").style.minHeight = "320px";
   document.getElementById("overmenu3").style.borderWidth = "2px"; 
   document.getElementById("BottomOverMenu3").setAttribute('onclick','closeovermenu3()');
   document.getElementById("BottomOverMenu3").innerHTML = "<i class='fas fa-arrow-circle-up'></i>";
