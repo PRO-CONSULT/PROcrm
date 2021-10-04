@@ -1,40 +1,38 @@
 	  <div class="tr1" id="maintr1">
     <div class="trtop">
-	<div class="trtopdiv1"><p><?php print_r($trtop1 = "MENU"); ?></p></div>
-	<div class="trtopdiv2"><p><a id="open-popup" href="#"  onclick="openNav()"><i class="fas fa-plus-circle"></i></a></p></div>
+	<div class="trtopdiv1" id="menutop1"></div>
+	<div class="trtopdiv2"><p><a id="open-popup" href="#"  onclick="NewInq()"><i class="fas fa-plus-circle"></i></a></p></div>
     </div>
     <div class="trdrop"><select class="trdrop"></select>
     </div>
-    <div class="trinder1">
-    <?php  
-	$sql = "SELECT * FROM jobs";
-	$result = $conn->query($sql);
-	while($row = $result->fetch_assoc()) {?><button onclick="listehent(this.value)" value="<?php echo $row["JobsID"]?>" id="forlist"><?php echo $row["JobsID"]?></button><br><?php }
-
-    ?>
+    <div class="trinder1" id="inqlist">
     </div>
   </div>
   <div class="mellemrum">
   </div>
-  <div class="tr2" id="maintr2">
-    <div class="trtop"><?php print_r($trtop2 = "MENU"); ?>
+  <div class="tr1" id="maintr2">
+    <div class="trtop">
+	<div class="trtopdiv1" id="menutop2"></div>
+	<div class="trtopdiv2"><p><a id="open-popup" href="#"  onclick="NewInq()"><i class="fas fa-plus-circle"></i></a></p></div>
     </div>
     <div class="trdrop">
     </div>
-    <div class="trinder1">
+    <div class="trinder1" id="offerlist">
     </div>
   </div>
   <div class="mellemrum">.</div>
-  <div class="tr3" id="maintr3">
-    <div class="trtop"><?php print_r($trtop3 = "MENU"); ?>
+  <div class="tr1" id="maintr3">
+    <div class="trtop">
+	<div class="trtopdiv1" id="menutop3"></div>
+	<div class="trtopdiv2"><p><a id="open-popup" href="#"  onclick="NewInq()"><i class="fas fa-plus-circle"></i></a></p></div>
     </div>
     <div class="trdrop">
     </div>
-    <div class="trinder1">
+    <div class="trinder1" id="orderlist">
     </div>
   </div>
   <div class="mellemrum">.</div>
-  <div class="tr4" id="maintr4">
+  <div class="tr1" id="maintr4">
     <div class="trtop"><?php print_r($trtop4 = "MENU"); ?>
     </div>
     <div class="trdrop">
@@ -43,7 +41,7 @@
     </div>
   </div>
   <div class="mellemrum">.</div>
-  <div class="tr5" id="maintr5">
+  <div class="tr2" id="maintr5">
     <div class="trtop"><?php print_r($trtop5 = "MENU"); ?>
     </div>
     <div class="trdrop">
