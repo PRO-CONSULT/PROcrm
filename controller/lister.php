@@ -10,7 +10,7 @@ $html .= '" id="forlist">';
 $html .= 'jobnrString';
 $html .= '</button><br>';
     
-	$sqljobslist = "SELECT * FROM jobs where Flag = '$listtype'";
+	$sqljobslist = "SELECT * FROM jobs where Flag = '$listtype' ORDER BY JobsID DESC";
 	$resultjobslist = $conn->query($sqljobslist);
         while($row = $resultjobslist->fetch_assoc()) {$jobsidlist = $row["JobsID"];
                 $output = str_replace('jobnrString', $jobsidlist, $html);

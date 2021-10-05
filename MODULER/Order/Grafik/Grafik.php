@@ -52,38 +52,38 @@
 </div>
 
 <div id="myNav" class="overlay">
-
+  <div id="status"></div>
   <div class="oversidetop">
-    <div class="overside1" id="rapportnr">0</div>
+    <div class="overside1" id="rapportnr" class="overinput">0</div>
     <div class="overside2">REVK</div> 
-    <div class="overside3"><input id="revknr"></div> 
+    <div class="overside3"><input id="revknr" class="overinput"></div> 
     <div class="overside4">opgave ansvarlige</div> 
-    <div class="overside5"><input id="opgaveans"></div>  
+    <div class="overside5"><input id="opgaveans" class="overinput"></div>  
     <div class="overside6">Order værdig</div> 
     <div class="overside7" id="ordervalue">0 DKK</div>  
     <div class="overside8"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="far fa-times-circle"></i></a></div>  
   </div><br><br>
-  <div class="oversidetop">
-    <div class="overside9" id="kundenavn">TEST.KUNDE</div> 
-    <div class="overside8"><a id="BottomOverMenu1" href="javascript:void(0)" class="closebtn" onclick="openovermenu1()"><id="BottomOverMenu1i" class="fas fa-arrow-circle-down"></i></a></div>  
+  <div>
+    <div class="overside10" id="kundenavn"><input class="overinput" id="inputkundenavn"></div> 
+    <div class="overside8"><a id="BottomOverMenu1" href="javascript:void(0)" class="closebtn" onclick="saveorder()"><id="BottomOverMenu1i" class="fas fa-arrow-circle-down"></i></a></div>  
   </div><br>
-  <div style="border-style: solid; border-width: 0px; height: 0%;   overflow-x: hidden;" id="overmenu1" class="oversidetop">
+  <div style="border-style: solid; border-width: 0px; height: 0%;   overflow-x: hidden;" id="overmenu1">
     <div class="overside8" style="border-style: solid; border-width: 0px; height: 0px;">
       <div>Firmanavn:</div><div id="firmanavn">4</div><div></div><div></div><br>
     </div> 
   </div><br>
-  <div class="oversidetop">
+  <div>
     <div class="overside9">1 VARE LINE(R)</div> 
     <div class="overside8"><a id="BottomOverMenu2" href="javascript:void(0)" class="closebtn" onclick="openovermenu2()"><i class="fas fa-arrow-circle-down"></i></a></div>  
   </div><br>
-  <div style="border-style: solid; border-width: 0px; height: 0%;   overflow-x: hidden;" id="overmenu2" class="oversidetop">
+  <div style="border-style: solid; border-width: 0px; height: 0%; overflow-x: hidden;" id="overmenu2">
     <div class="overside8" style="border-style: solid; border-width: 0px; height: 0%;">sdfg</div>  
   </div><br>
-  <div class="oversidetop">
+  <div>
     <div class="overside9">0 BESTILINGS LINE(R)</div> 
     <div class="overside8"><a id="BottomOverMenu3" href="javascript:void(0)" class="closebtn" onclick="openovermenu3()"><i class="fas fa-arrow-circle-down"></i></a></div>  
   </div><br>
-  <div style="border-style: solid; border-width: 0px; height: 0%;   overflow-x: hidden;" id="overmenu3" class="oversidetop">
+  <div style="border-style: solid; border-width: 0px; height: 0%;   overflow-x: hidden;" id="overmenu3">
     <div class="overside8" style="border-style: solid; border-width: 0px; height: 0%;">sdfg</div>  
   </div>
 

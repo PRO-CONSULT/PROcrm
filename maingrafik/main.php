@@ -22,6 +22,6 @@
 </div>
 <br>
 <div id="main" class="main">
-<?php include 'MODULER/Grafiktest/Grafik/Grafik.php'; ?>
+<?php include 'MODULER/Order/Grafik/Grafik.php'; ?>
 </div>
 </center>
