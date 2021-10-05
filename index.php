@@ -55,7 +55,7 @@ function openinder() {
   var revknr = $('input#ajaxrevknr').val();
 
   document.getElementById("rapportnr").innerHTML = rapportnr;
-  document.getElementById("kundenavn").innerHTML = kundenavn;
+  $('#inputkundenavn').val(kundenavn);
   document.getElementById("firmanavn").innerHTML = kundenavn;
   $('#revknr').val(revknr);
 }
@@ -70,7 +70,7 @@ function NewInq() {
 
 function clearlist() {
         document.getElementById("rapportnr").innerHTML = "-";
-  	document.getElementById("kundenavn").innerHTML = ".";
+        $('#inputkundenavn').val("");
   	document.getElementById("firmanavn").innerHTML = ".";
 	$('#revknr').val("");  
 }
@@ -83,6 +83,26 @@ function ListInputenabled() {
 	$("#revknr").prop('disabled', false);
 }
 
+
+function saveorder() {
+  ListInputenabled();
+  var savekundenavn = $('input#inputkundenavn').val();
+  var saverevknr = $('input#revknr').val();
+  var xhttp;
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("status").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "controller/saveorder.php?q="+savekundenavn+"&z="+saverevknr, true);
+  xhttp.send();
+ setTimeout(function() {
+ 
+ inqlist();
+}, delayInMilliseconds);
+}
+  
 </script>
 
 <?php $conn->close(); ?>
