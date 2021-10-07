@@ -13,6 +13,7 @@ function openovermenu1() {
   document.getElementById("overmenu1").style.borderWidth = "0px"; 
   document.getElementById("BottomOverMenu1").setAttribute('onclick','closeovermenu1()');
   document.getElementById("BottomOverMenu1").innerHTML = "<i class='fas fa-arrow-circle-up'></i>";
+  SaveOrder();
 }
 
 function closeovermenu1() {

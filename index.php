@@ -44,6 +44,7 @@ function listehent(str) {
  setTimeout(function() {
  openinder();
  openNav();
+    $('#pluscontroller').val("Old");
 }, delayInMilliseconds);
 }
 
@@ -66,6 +67,24 @@ function NewInq() {
 	ListInputdisabled();
         clearlist();
  	openNav();
+        $('#pluscontroller').val("inq");
+        document.getElementById("SaveOrder").innerHTML = "Gem Forsprøgesle";
+}
+
+function NewOffer() {
+	ListInputdisabled();
+        clearlist();
+ 	openNav();
+        $('#pluscontroller').val("offer");
+        document.getElementById("SaveOrder").innerHTML = "Gem Tilbud";
+}
+
+function NewOrder() {
+	ListInputdisabled();
+        clearlist();
+ 	openNav();
+        $('#pluscontroller').val("order");
+        document.getElementById("SaveOrder").innerHTML = "Gem Order";
 }
 
 function clearlist() {
@@ -84,7 +103,9 @@ function ListInputenabled() {
 }
 
 
-function saveorder() {
+function SaveOrder() {
+  var PlusType =  $('input#pluscontroller').val();
+   if(PlusType !== "Old"){
   ListInputenabled();
   var savekundenavn = $('input#inputkundenavn').val();
   var saverevknr = $('input#revknr').val();
@@ -95,17 +116,21 @@ function saveorder() {
     document.getElementById("status").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "controller/saveorder.php?q="+savekundenavn+"&z="+saverevknr, true);
+  xhttp.open("GET", "controller/saveorder.php?q="+savekundenavn+"&z="+saverevknr+"&a="+PlusType, true);
   xhttp.send();
- setTimeout(function() {
- 
- inqlist();
-}, delayInMilliseconds);
-}
+  }
+  document.getElementById("SaveOrder").innerHTML = "Opdater Sag";
+  $('#pluscontroller').val("Old"); 
+  startlister();
+  var delayInMilliseconds = 5000; //1 second
+  setTimeout(function() {
+  document.getElementById("status").innerHTML = "";
+}, delayInMilliseconds); 
+ }
   
 </script>
 
 <?php $conn->close(); ?>
 </body>
-
+<input type="hidden" id="pluscontroller">
 </html>
