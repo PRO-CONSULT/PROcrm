@@ -1,21 +1,21 @@
 /* TOP grafik */
 
 
-div.top {position: absolute; top: 2%; left: 2%; display: grid; width: 95%; min-height: 60px; align-self: center; background-color: ; border-style: solid; border-width: 0px; 
+div.top {position: absolute; top: 2%; left: 2%; display: grid; width: 95%; min-height: 40px; align-self: center; background-color: ; border-style: solid; border-width: 0px; 
 grid-template-areas:
     'top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-logo top-klokke top-klokketal top-mail top-mailtal top-aux top-auxtal adminmenu'
 }
 div.top-logo {grid-area: top-logo; align-self: left; background-color: ; border-style: solid; border-width: 0px; }
-div.top-klokke {grid-area: top-klokke; align-self: left; border-style: solid; border-width: 0px; font-size: 40px;}
-div.top-klokketal {grid-area: top-klokketal; align-self: left; border-style: solid; border-width: 0px; font-size: 40px;}
-div.top-mail {grid-area: top-mail; align-self: left; border-style: solid; border-width: 0px; font-size: 40px; }
-div.top-mailtal {grid-area: top-mailtal; align-self: left; border-style: solid; border-width: 0px; font-size: 40px;}
-div.top-aux {grid-area: top-aux; align-self: left; border-style: solid; border-width: 0px; font-size: 40px;}
-div.top-auxtal {grid-area: top-auxtal; align-self: left; border-style: solid; border-width: 0px; font-size: 40px;}
-div.adminmenu {grid-area: adminmenu; align-self: left; border-style: solid; border-width: 0px; font-size: 40px;}
+div.top-klokke {grid-area: top-klokke; align-self: left; border-style: solid; border-width: 0px; font-size: 30px;}
+div.top-klokketal {grid-area: top-klokketal; align-self: left; border-style: solid; border-width: 0px; font-size: 30px;}
+div.top-mail {grid-area: top-mail; align-self: left; border-style: solid; border-width: 0px; font-size: 30px; }
+div.top-mailtal {grid-area: top-mailtal; align-self: left; border-style: solid; border-width: 0px; font-size: 30px;}
+div.top-aux {grid-area: top-aux; align-self: left; border-style: solid; border-width: 0px; font-size: 30px;}
+div.top-auxtal {grid-area: top-auxtal; align-self: left; border-style: solid; border-width: 0px; font-size: 30px;}
+div.adminmenu {grid-area: adminmenu; align-self: left; border-style: solid; border-width: 0px; font-size: 30px;}
 
 /* menu Grafic */
-div.menu {position: absolute; top: 6%; left: 2%; display: grid; width: 95%; min-height: 60px; align-self: center; background-color:  ; border-style: solid; border-width: 0px;
+div.menu {position: absolute; top: 6%; left: 2%; display: grid; width: 95%; min-height: 40px; align-self: center; background-color:  ; border-style: solid; border-width: 0px;
 grid-template-areas:
     'menuunder1 menuunder1 menuunder2 menuunder2 menuunder3 menuunder3 menuunder4 menuunder4 menuunder5 menuunder5 menuunder6 menuunder6 menuunder7 menuunder7 menuunder8 menuunder8 menuunder8 menuunder8 menuunder8 menuunder8 menuunder8 menuunder8 menuunder8 menuunder9 menuunder9 menuunder9 menuunder9 menuunder9 menuunder9 menuunder9 menuunder9 menuunder9';
 grid-gap: 20px;
