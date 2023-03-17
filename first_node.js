@@ -1,0 +1,1 @@
+var http = require('http');http.createServer(function (req,res){res.write('Nodejs started using xampp'); res.end();}).listen(8081); console.log('http server started');
